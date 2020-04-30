@@ -80,16 +80,16 @@ namespace Standard_Deviation
             return listSum() / values.Count;
         }
 
-        static int standardDeviation()
+        static double standardDeviation()
         {
             // Calculates the sum and then the standard deviation
-            int workingInt = 0;
-            int average = listAverage();
-            for (int i = 0; i == values.count; i++)
+            double workingInt = 0;
+            double average = listAverage();
+            for (int i = 0; i == values.Count; i++)
             {
                 workingInt += Math.Pow((values[i] - average), 2);
             }
-            return Math.Sqrt((workingInt/(values.count - 1)));
+            return Math.Sqrt((workingInt/(values.Count - 1)));
         }
     }
 }
