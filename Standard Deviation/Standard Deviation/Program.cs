@@ -28,10 +28,13 @@ namespace Standard_Deviation
 
                 }
             }
-            // If no arguments are given, launch the program normally
-            Console.WriteLine("Enter all your values. If a value has a frequency more than 1, please enter it in the form of VALUE*FREQUENCY. Separate values with a comma','. Spaces are not needed. When all values have been entered hit ENTER.");
-            string input = Console.ReadLine();
-            parseInput(input);
+            else
+            {
+                // If no arguments are given, launch the program normally
+                Console.WriteLine("Enter all your values. If a value has a frequency more than 1, please enter it in the form of VALUE*FREQUENCY. Separate values with a comma','. Spaces are not needed. When all values have been entered hit ENTER.");
+                string input = Console.ReadLine();
+                parseInput(input);
+            }
 
             //Pause so that the user can read the results
             Console.WriteLine("Press any key to exit.");
