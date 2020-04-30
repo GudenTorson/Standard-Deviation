@@ -13,11 +13,21 @@ namespace Standard_Deviation
         {
             if (args.Length > 0)
             {
-                if (args[0] == "-I" || args[0] == "-i")
+                if (args[0] == "-L" || args[0] == "-l")
                 {
-                    // If the arguments -I or -i are supplied use the supplied arguments
-                    Console.WriteLine("Trying to use supplied arguments...");
-                    parseInput(args[1]);
+                    // If the arguments -L or -l are supplied use the supplied arguments
+                    try
+                    {
+                        Console.WriteLine("Trying to use supplied arguments...");
+                        parseInput(args[1]);
+                    }
+                    catch
+                    {
+                        Console.WriteLine("Unknown argument(s) given, here is a list of the syntax.");
+                        Console.WriteLine("Standard-Deviation.exe -i \"value1,value2,value3...\"");
+                        Environment.Exit(1);
+                    }
+
                 }
                 
                 else if (args[0] != "")
@@ -25,7 +35,7 @@ namespace Standard_Deviation
                     // If unknown arguments are given , display the help page
                     Console.WriteLine("Unknown argument(s) given, here is a list of the syntax.");
                     Console.WriteLine("Standard-Deviation.exe -i \"value1,value2,value3...\"");
-
+                    Environment.Exit(1);
                 }
             }
             else
@@ -37,7 +47,7 @@ namespace Standard_Deviation
             }
 
             double std = standardDeviation();
-            Console.WriteLine("Standard Deviation: " + std);
+            Console.WriteLine("\nStandard Deviation: " + std);
 
             //Pause so that the user can read the results
             Console.WriteLine("Press any key to exit.");
