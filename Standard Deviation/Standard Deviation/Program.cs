@@ -11,23 +11,26 @@ namespace Standard_Deviation
         static List<double> values = new List<double>();
         static void Main(string[] args)
         {
-            if (args[0] == "-I" || args[0] == "-i")
+            if (args.Length < 0)
             {
-                Console.WriteLine("Trying to use supplied arguments...");
-                parseInput(args[1]);
-            }
-            else if (args[0] == "")
-            {
-                Console.WriteLine("Enter all your values. If a value has a frequency more than 1, please enter it in the form of VALUE*FREQUENCY. Separate values with a comma','. Spaces are not needed. When all values have been entered hit ENTER.");
-                string input = Console.ReadLine();
-                parseInput(input);
+                if (args[0] == "-I" || args[0] == "-i")
+                {
+                    Console.WriteLine("Trying to use supplied arguments...");
+                    parseInput(args[1]);
+                }
+                else if (args[0] == "")
+                {
+                    Console.WriteLine("Enter all your values. If a value has a frequency more than 1, please enter it in the form of VALUE*FREQUENCY. Separate values with a comma','. Spaces are not needed. When all values have been entered hit ENTER.");
+                    string input = Console.ReadLine();
+                    parseInput(input);
 
-            }
-            else if (args[0] != "")
-            {
-                Console.WriteLine("Unknown argument(s) given, here is a list of the syntax.");
-                Console.WriteLine("Standard-Deviation.exe -i \"value1,value2,value3...\"");
-            
+                }
+                else if (args[0] != "")
+                {
+                    Console.WriteLine("Unknown argument(s) given, here is a list of the syntax.");
+                    Console.WriteLine("Standard-Deviation.exe -i \"value1,value2,value3...\"");
+
+                }
             }
 
 
