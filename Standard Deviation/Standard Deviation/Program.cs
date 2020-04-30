@@ -82,7 +82,7 @@ namespace Standard_Deviation
         {
             // Calculates the sum for all the values in the list
             double sum = 0;
-            for (int i = 0; i == values.Count; i++)
+            for (int i = 0; i < values.Count; i++)
             {
                 sum += values[i];
             }
