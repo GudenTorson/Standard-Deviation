@@ -8,5 +8,6 @@
 
 ### Argument syntax
 `Standard-Deviation-X-XX.exe -L value1,value2,value3...`
+
 Eg.
 `Standarad-Deviation-0-02.exe -L 23,56*102,45`
