@@ -10,9 +10,13 @@ namespace Standard_Deviation
     {
         static void Main(string[] args)
         {
+            if (args[0] != "-i" || args[0] != "-i")
+            { 
             Console.WriteLine("Enter all your values. If a value has a frequency more than 1, please enter it in the form of VALUE*FREQUENCY. Separate values with a comma','. Spaces are not needed. When all values have been entered hit ENTER.");
             string input = Console.ReadLine();
             listValues(input);
+            }
+
         }
         
         static void listValues(string input)
