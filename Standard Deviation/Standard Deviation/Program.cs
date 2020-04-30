@@ -10,6 +10,8 @@ namespace Standard_Deviation
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("It's not done yet. Press any key to exit.");
+            Console.ReadKey();
         }
     }
 }
