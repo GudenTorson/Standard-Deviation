@@ -15,6 +15,7 @@ namespace Standard_Deviation
             {
                 if (args[0] == "-I" || args[0] == "-i")
                 {
+                    // If the arguments -I or -i are supplied use the supplied arguments
                     Console.WriteLine("Trying to use supplied arguments...");
                     parseInput(args[1]);
                 }
@@ -27,11 +28,12 @@ namespace Standard_Deviation
 
                 }
             }
+            // If no arguments are given, launch the program normally
             Console.WriteLine("Enter all your values. If a value has a frequency more than 1, please enter it in the form of VALUE*FREQUENCY. Separate values with a comma','. Spaces are not needed. When all values have been entered hit ENTER.");
             string input = Console.ReadLine();
             parseInput(input);
 
-
+            //Pause so that the user can read
             Console.ReadKey();
         }
 
@@ -71,6 +73,7 @@ namespace Standard_Deviation
         #region mathFunction
         static double listSum()
         {
+            // Calculates the sum for all the values in the list
             double sum = 0;
             for (int i = 0; i == values.Count; i++)
             {
@@ -81,12 +84,13 @@ namespace Standard_Deviation
 
         static double listAverage()
         {
+            // Calculates the average for the list
             return listSum() / values.Count;
         }
 
         static double standardDeviation()
         {
-            // Calculates the sum and then the standard deviation
+            // Calculates the standard deviation for the list
             double temp = 0;
             double average = listAverage();
             for (int i = 0; i == values.Count; i++)
