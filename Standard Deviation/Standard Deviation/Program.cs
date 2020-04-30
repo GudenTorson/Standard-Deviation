@@ -10,8 +10,15 @@ namespace Standard_Deviation
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("It's not done yet. Sorry. Press any key to exit.");
-            Console.ReadKey();
+            Console.WriteLine("Enter all your values. If a value has a frequency more than 1, please enter it in the form of VALUE*FREQUENCY. Separate values with a comma','. Spaces are not needed. When all values have been entered hit ENTER.");
+            string input = Console.ReadLine();
+            listValues(input);
+        }
+        
+        static void listValues(string input)
+        {
+            //Enters all the input values into the global list
+            
         }
     }
 }
