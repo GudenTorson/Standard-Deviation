@@ -8,6 +8,7 @@ namespace Standard_Deviation
 {
     class Program
     {
+        static List<double> values = new List<double>();
         static void Main(string[] args)
         {
             if (args[0] == "-I" || args[0] == "-i")
@@ -30,12 +31,38 @@ namespace Standard_Deviation
             }
 
 
+            Console.ReadKey();
         }
         
-        static void listValues(string input)
+        static void parseInput(string input)
         {
             //Enters all the input values into the global list
-            
+            string[] items = input.Split(',');
+            for (int i = 0; i < items.Length; i++)
+            {
+                parseItem(items[i]);
+            }
+        }
+
+        static void parseItem(string item)
+        {
+            // check if the item contains multiple of values
+            if (item.Contains('*'))
+            {
+                string[] arguments = item.Split('*');
+                double num = double.Parse(arguments[0]);
+                int times = int.Parse(arguments[1]);
+
+                for (int i = 0; i < times; i++)
+                {
+                    values.Add(num);
+                }
+            }
+            else
+            {
+                double num = double.Parse(item);
+                values.Add(num);
+            }
         }
 
         static int listSum()
