@@ -8,14 +8,15 @@ namespace Standard_Deviation
 {
     class Program
     {
+        List<double> values = new List<double>();
         static void Main(string[] args)
         {
             Console.WriteLine("Enter all your values. If a value has a frequency more than 1, please enter it in the form of VALUE*FREQUENCY. Separate values with a comma','. Spaces are not needed. When all values have been entered hit ENTER.");
             string input = Console.ReadLine();
-            listValues(input);
+            parseInput(input);
         }
         
-        static void listValues(string input)
+        static void parseInput(string input)
         {
             //Enters all the input values into the global list
             
