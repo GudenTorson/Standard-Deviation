@@ -31,6 +31,9 @@ namespace Standard_Deviation
             string input = Console.ReadLine();
             parseInput(input);
 
+            double std = standardDeviation();
+            Console.WriteLine("Standard Deviation: " + std);
+
 
             Console.ReadKey();
         }
