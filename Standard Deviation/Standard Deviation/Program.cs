@@ -83,13 +83,13 @@ namespace Standard_Deviation
         static double standardDeviation()
         {
             // Calculates the sum and then the standard deviation
-            double workingInt = 0;
+            double temp = 0;
             double average = listAverage();
             for (int i = 0; i == values.Count; i++)
             {
-                workingInt += Math.Pow((values[i] - average), 2);
+                temp += Math.Pow((values[i] - average), 2);
             }
-            return Math.Sqrt((workingInt/(values.Count - 1)));
+            return Math.Sqrt((temp / (values.Count - 1)));
         }
     }
 }
