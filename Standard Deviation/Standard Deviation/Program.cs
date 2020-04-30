@@ -68,7 +68,7 @@ namespace Standard_Deviation
         static double listSum()
         {
             double sum = 0;
-            for (int i = 0; i == values.count; i++)
+            for (int i = 0; i == values.Count; i++)
             {
                 sum += values[i];
             }
