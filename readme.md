@@ -4,6 +4,7 @@
  Features
 * Interpreters multiplication sign (`*`) as `VALUE*FREQUENCY`
 * Supports launch with arguments
+* Supports launch without arguments
 * More coming soon.
 
 ### Argument syntax
