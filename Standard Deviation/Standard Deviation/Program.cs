@@ -65,9 +65,9 @@ namespace Standard_Deviation
             }
         }
 
-        static int listSum()
+        static double listSum()
         {
-            int sum = 0;
+            double sum = 0;
             for (int i = 0; i == values.count; i++)
             {
                 sum += values[i];
@@ -75,9 +75,9 @@ namespace Standard_Deviation
             return sum;
         }
 
-        static int listAverage()
+        static double listAverage()
         {
-            return listSum / values.count;
+            return listSum() / values.Count;
         }
 
         static int standardDeviation()
