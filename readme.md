@@ -8,8 +8,8 @@
 * More coming soon.
 
 ### Argument syntax
-`Standard-Deviation-X-XX.exe -L value1,value2,value3...`
+`Standard-Deviation-X-X.exe -L value1,value2,value3...`
 
 E.g.
 
-`Standarad-Deviation-0-02.exe -L 23,56*102,45`
+`Standarad-Deviation-0-2.exe -L 23,56*102,45`
