@@ -100,7 +100,7 @@ namespace Standard_Deviation
             // Calculates the standard deviation for the list
             double temp = 0;
             double average = listAverage();
-            for (int i = 0; i == values.Count; i++)
+            for (int i = 0; i < values.Count; i++)
             {
                 temp += Math.Pow((values[i] - average), 2);
             }
