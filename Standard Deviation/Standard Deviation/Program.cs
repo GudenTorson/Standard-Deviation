@@ -33,7 +33,8 @@ namespace Standard_Deviation
 
             Console.ReadKey();
         }
-        
+
+        #region parser
         static void parseInput(string input)
         {
             //Enters all the input values into the global list
@@ -64,7 +65,9 @@ namespace Standard_Deviation
                 values.Add(num);
             }
         }
+        #endregion
 
+        #region mathFunction
         static double listSum()
         {
             double sum = 0;
@@ -91,5 +94,6 @@ namespace Standard_Deviation
             }
             return Math.Sqrt((temp / (values.Count - 1)));
         }
+        #endregion
     }
 }
