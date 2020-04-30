@@ -33,10 +33,8 @@ namespace Standard_Deviation
             string input = Console.ReadLine();
             parseInput(input);
 
-            double std = standardDeviation();
-            Console.WriteLine("Standard deviation: " + std);
-
-
+            //Pause so that the user can read the results
+            Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
         }
 
