@@ -46,11 +46,10 @@ namespace Standard_Deviation
                 parseInput(input);
             }
 
-            double std = standardDeviation();
             Console.WriteLine("\nSum: " + listSum());
             Console.WriteLine("Average: " + listAverage());
             Console.WriteLine("Median: " + listMedian());
-            Console.WriteLine("Standard Deviation: " + std);
+            Console.WriteLine("Standard Deviation: " + standardDeviation());
 
             //Pause so that the user can read the results
             Console.WriteLine("Press any key to exit.");
