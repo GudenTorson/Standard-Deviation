@@ -24,7 +24,8 @@ namespace Standard_Deviation
                     catch
                     {
                         Console.WriteLine("Unknown argument(s) given, here is a list of the syntax.");
-                        Console.WriteLine("Standard-Deviation.exe -i \"value1,value2,value3...\"");
+                        Console.WriteLine("Standard-Deviation-X-X.exe -i \"value1,value2,value3...\" Calculates the standard deviation for the given values");
+                        Console.WriteLine("Standard-Deviation-X-X.exe -a Displays information about the application.");
                         Environment.Exit(1);
                     }
 
@@ -34,7 +35,16 @@ namespace Standard_Deviation
                 {
                     // If unknown arguments are given , display the help page
                     Console.WriteLine("Unknown argument(s) given, here is a list of the syntax.");
-                    Console.WriteLine("Standard-Deviation.exe -i \"value1,value2,value3...\"");
+                    Console.WriteLine("Standard-Deviation-X-X.exe -i \"value1,value2,value3...\" Calculates the standard deviation for the given values");
+                    Console.WriteLine("Standard-Deviation-X-X.exe -a Displays information about the application.");
+                    Environment.Exit(1);
+                }
+
+                else if (args[0] == "-A" || args[0] == "-a")
+                {
+                    // If the argument -A or -a is given display the information abut the application
+                    Console.WriteLine("Standard Deviation ver " + "0.3" );
+                    Console.WriteLine("Developed by Elliot Hultgren and Tor Smedberg");
                     Environment.Exit(1);
                 }
             }
