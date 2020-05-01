@@ -28,7 +28,7 @@ The input `23,56*3,45` would be interpreted as the following list:
 ### Startup argument syntax
 `Standard-Deviation-X-X.exe <OPTIONAL ARGUMENTS>`
 |Argument|Description|
-|-------:|----------:|
+|:-------|:----------|
 |`-L item1, item2, item3...`| Calculates the standard deviation with the supplied values
 |`-a`| Displays information about the application|
 
