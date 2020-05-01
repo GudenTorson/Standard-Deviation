@@ -5,6 +5,7 @@
 * Interpreters multiplication sign (`*`) as `VALUE*FREQUENCY`
 * Supports launch with arguments
 * Supports launch without arguments
+* Outputs sum, average and median
 * More coming soon.
 
 ### Input syntax
