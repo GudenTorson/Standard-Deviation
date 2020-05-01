@@ -1,7 +1,7 @@
 # Standard Deviation
  **An console application for Windows that calculates the standard deviation for a set of values.**
  ---
- Features
+ ###Features
 * Interpreters multiplication sign (`*`) as `VALUE*FREQUENCY`
 * Supports launch with arguments
 * Supports launch without arguments
