@@ -23,6 +23,7 @@ namespace Standard_Deviation
                     }
                     catch
                     {
+                        // If the parsing of the supplied values goes wrong display an error
                         Console.WriteLine("There was something wrong with the supplied values.");
                         Console.WriteLine("Standard-Deviation-X-X.exe -i \"value1,value2,value3...\" Calculates the standard deviation for the given values");
                         Console.WriteLine("Standard-Deviation-X-X.exe -a Displays information about the application.");
