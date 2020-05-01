@@ -7,6 +7,7 @@
 * Supports launch without arguments
 * Outputs sum, average, median and standard deviation
 * Version names based on sea creatures
+* Code with comments
 * More coming soon.
 
 ### Input syntax
