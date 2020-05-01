@@ -132,8 +132,6 @@ namespace Standard_Deviation
             }
             else
             {
-                //double one = values[values.Count / 2];
-                //double two = values[values.Count / 2 - 1];
                 return (values[values.Count / 2] + values[values.Count / 2 - 1]) / 2;
             }
         }
