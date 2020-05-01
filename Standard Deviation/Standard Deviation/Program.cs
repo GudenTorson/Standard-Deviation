@@ -47,7 +47,10 @@ namespace Standard_Deviation
             }
 
             double std = standardDeviation();
-            Console.WriteLine("\nStandard Deviation: " + std);
+            Console.WriteLine("\nSum: " + listSum());
+            Console.WriteLine("Average: " + listAverage());
+            Console.WriteLine("Median: " + listMedian());
+            Console.WriteLine("Standard Deviation: " + std);
 
             //Pause so that the user can read the results
             Console.WriteLine("Press any key to exit.");
@@ -87,7 +90,7 @@ namespace Standard_Deviation
         }
         #endregion
 
-        #region mathFunction
+        #region mathFunctions
         static double listSum()
         {
             // Calculates the sum for all the values in the list
@@ -115,6 +118,24 @@ namespace Standard_Deviation
                 temp += Math.Pow((values[i] - average), 2);
             }
             return Math.Sqrt((temp / (values.Count - 1)));
+        }
+
+        static double listMedian()
+        {
+            // sort the list
+            values.Sort();
+
+            // check if the list has an odd number of values
+            if ((values.Count + 1) % 2 == 0)
+            {
+                return values[(values.Count + 1) / 2 - 1];
+            }
+            else
+            {
+                //double one = values[values.Count / 2];
+                //double two = values[values.Count / 2 - 1];
+                return (values[values.Count / 2] + values[values.Count / 2 - 1]) / 2;
+            }
         }
         #endregion
     }
