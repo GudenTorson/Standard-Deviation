@@ -57,7 +57,7 @@ namespace Standard_Deviation
         #region parser
         static void parseInput(string input)
         {
-            //Enters all the input values into the global list
+            // parses all the inputed values into the global list
             string[] items = input.Split(',');
             for (int i = 0; i < items.Length; i++)
             {
