@@ -28,4 +28,4 @@ The input `23,56*3,45` would be interpreted as the following list:
 
 E.g.
 
-`Standarad-Deviation-0-2.exe -L 23,56*3,45`
+`Standarad-Deviation-0-3.exe -L 23,56*3,45`
