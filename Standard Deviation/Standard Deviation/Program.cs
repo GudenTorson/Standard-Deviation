@@ -23,7 +23,7 @@ namespace Standard_Deviation
                     }
                     catch
                     {
-                        Console.WriteLine("Unknown argument(s) given, here is a list of the syntax.");
+                        Console.WriteLine("There was something wrong with the supplied values.");
                         Console.WriteLine("Standard-Deviation-X-X.exe -i \"value1,value2,value3...\" Calculates the standard deviation for the given values");
                         Console.WriteLine("Standard-Deviation-X-X.exe -a Displays information about the application.");
                         Environment.Exit(1);
