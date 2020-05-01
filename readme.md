@@ -6,6 +6,7 @@
 * Supports launch with arguments
 * Supports launch without arguments
 * Outputs sum, average and median
+* Version names based on sea creatures
 * More coming soon.
 
 ### Input syntax
