@@ -18,7 +18,7 @@ E.g.
 
 The input `23,56*3,45` would be interpreted as the following list:
 |Values|
-|-----:|
+|:-----|
 |23    |
 |56    |
 |56    |
