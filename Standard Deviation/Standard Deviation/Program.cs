@@ -49,7 +49,7 @@ namespace Standard_Deviation
             else
             {
                 // If no arguments are given, launch the program normally
-                Console.WriteLine("Enter all your values. If a value has a frequency more than 1, please enter it in the form of VALUE*FREQUENCY. Separate values with a comma','. Spaces are not needed. When all values have been entered hit ENTER.");
+                Console.WriteLine("Enter all your values. If a value has a frequency more than 1, please enter it in the form of VALUE*FREQUENCY. Separate values with a semicolon';'. Spaces are not needed. When all values have been entered hit ENTER.");
                 string input = Console.ReadLine();
                 parseInput(input);
             }
@@ -68,7 +68,7 @@ namespace Standard_Deviation
         static void parseInput(string input)
         {
             // parses all the inputed values into the global list
-            string[] items = input.Split(',');
+            string[] items = input.Split(';');
             for (int i = 0; i < items.Length; i++)
             {
                 parseItem(items[i]);
@@ -82,9 +82,9 @@ namespace Standard_Deviation
             {
                 string[] arguments = item.Split('*');
                 double num = double.Parse(arguments[0]);
-                int times = int.Parse(arguments[1]);
+                int frequency = int.Parse(arguments[1]);
 
-                for (int i = 0; i < times; i++)
+                for (int i = 0; i < frequency; i++)
                 {
                     values.Add(num);
                 }
