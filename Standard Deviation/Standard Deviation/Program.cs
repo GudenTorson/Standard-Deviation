@@ -32,7 +32,7 @@ namespace Standard_Deviation
 
                     case "-a":
                         // If the argument -A or -a is given display the information abut the application
-                        Console.WriteLine("\nStandard Deviation ver " + "0.3");
+                        Console.WriteLine("\nStandard Deviation ver " + "0.4");
                         Console.WriteLine("Developed by Elliot Hultgren and Tor Smedberg");
                         Environment.Exit(1);
                         break;
